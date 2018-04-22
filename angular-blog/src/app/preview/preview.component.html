@@ -1,0 +1,7 @@
+<div class="postPreview" *ngIf="post">
+  <button class="yellow" (click)="edit()">Edit</button>
+  <div class="preview">
+    <h2 [innerHTML]="render(post.title)"></h2>
+    <div [innerHTML]="render(post.body)"></div>
+  </div>
+</div>

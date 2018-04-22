@@ -1,0 +1,11 @@
+<div class="list">
+  <button class="green" (click)="create()">New Post</button>
+  <ul class="posts">
+    <li *ngFor="let post of posts">
+      <a class="post" routerLink="edit/{{ post.postid }}">
+        <span class="date">{{ post.created | date:'short' }}</span>
+        <br>{{ post.title }}<br>
+      </a>
+    </li>
+  </ul>
+</div>

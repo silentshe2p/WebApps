@@ -1,0 +1,20 @@
+<div *ngIf="post">
+  <form [formGroup]="form" class="edit">
+    <div class="titleDiv">
+      Title: <input id="title" type="text" formControlName="title" [(ngModel)]="post.title">
+    </div>
+    <div>
+      <textarea id="body" formControlName="body" placeholder="Body" [(ngModel)]="post.body"></textarea>
+    </div>
+
+    <div class="timestamp">
+      Last Modified: {{ post.modified | date:'short' }}
+    </div>
+
+    <div class="option">
+      <button class="green" (click)="save()" [disabled]="form.pristine">Save</button>
+      <button class="red" (click)="delete()">Delete</button>
+      <button class="yellow" (click)="preview()">Preview</button>
+    </div>
+  </form>
+</div>

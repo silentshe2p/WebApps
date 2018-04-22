@@ -1,0 +1,39 @@
+.postPreview {
+    float: left;
+    margin-left: 25%;
+}
+
+.preview {
+    background: #C6E0CF;
+    color: #6e402d;
+    font-weight: 600;
+    font-size: 16px;
+    border: 8px double rgba(94, 146, 104, 0.6);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+button {
+    color: #fff;
+    font-size: 12px;
+    background: hsl(195, 26%, 82%); 
+    border-radius: 4px;
+    padding: 6px 10px;
+    outline:none;
+    border:none;
+}
+
+.yellow {
+    border: none;
+    background: hsl(48, 87%, 47%);
+    margin-bottom: 10px;
+}
+
+.yellow:hover {
+    background: hsl(48, 85%, 45%);
+}
+
+.yellow:active {
+    background: hsl(48, 86%, 31%);
+}

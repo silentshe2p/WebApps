@@ -1,0 +1,95 @@
+.edit {
+    float: left;
+    margin-left: 25%;
+}
+
+.titleDiv {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#title {
+    color: rgb(0, 0, 0);
+    height: 25px;
+    width: 300px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: Console, monospace;
+    font-weight: bold;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+  
+#body {
+    color: #fff; 
+    background: #5F777E;
+    padding: 0 10px; 
+    height: 20rem;
+    width: 150%; 
+    line-height: 25px; 
+    outline: none;
+    border: none; 
+}
+
+.timestamp {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+button {
+    color: #fff;
+    font-size: 12px;
+    background: hsl(195, 26%, 82%); 
+    border-radius: 4px;
+    padding: 6px 10px;
+    outline:none;
+    border:none;
+}
+
+button:disabled {
+    background: hsl(205, 13%, 64%);
+}
+
+.green {
+    border: none;
+    background: hsl(145, 60%, 49%);
+}
+
+.green:hover:enabled {
+    background: hsl(145, 64%, 42%);
+}
+
+.green:active:enabled {
+    background: hsl(145, 66%, 29%);
+}
+
+.red {
+    border: none;
+    background: hsl(6, 71%, 57%);
+}
+
+.red:hover {
+    background: hsl(6, 62%, 45%)
+}
+.red:active {
+    background: hsl(6, 62%, 35%)
+}
+
+.yellow {
+    border: none;
+    background: hsl(48, 87%, 47%);
+}
+
+.yellow:hover {
+    background: hsl(48, 85%, 45%);
+}
+
+.yellow:active {
+    background: hsl(48, 86%, 31%);
+}

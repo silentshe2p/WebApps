@@ -1,0 +1,79 @@
+.list {
+    position: absolute;
+    width: 23%;
+}
+
+button {
+    color: #fff;
+    font-size: 12px;
+    background: hsl(195, 26%, 82%); 
+    border-radius: 4px;
+    padding: 6px 10px;
+    outline:none;
+    border:none;
+}
+
+.green {
+    border: none;
+    background: hsl(145, 60%, 49%);
+}
+
+.green:hover {
+    background: hsl(145, 64%, 42%);
+}
+
+.green:active {
+    background: hsl(145, 66%, 29%);
+}
+
+.posts {
+    counter-reset: li;
+    overflow: hidden;
+}
+
+.post {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+
+.post:hover, .post:focus, .post:active {
+    transform: translateX(15px);
+}
+
+li {
+    position: relative;
+    list-style: none;
+    display: block;
+    padding: 4px 8px;
+    background: hsl(97, 96%, 98%);
+}
+
+li:before {
+    position: absolute;
+    content: counter(li); 
+    counter-increment: li;
+    top: 0;
+    left: -2em;
+    width: 2em;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding: 14px;
+    color: white;
+    background: hsl(163, 96%, 24%);
+    font-weight: bold;
+    text-align: center;
+}
+
+li:hover {
+    background: bisque;
+}
+
+.date {
+    color: hsl(24, 96%, 43%);
+    background: transparent;
+}
