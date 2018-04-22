@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <% 
+        render = function(content) {
+            var reader = new commonmark.Parser();
+            var writer = new commonmark.HtmlRenderer();
+            var parsed = reader.parse(content);
+            return writer.render(parsed);
+        } 
+    %>    
+  <head>
+    <title>Posts</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+        <h1><%= posts[0].username %>'s posts</h1>
+    </div>
+    <div>
+        <% for(let post of posts) { %>
+            <ul>
+                <h2>Post #<%= post.postid %></h2>
+                <ul>
+                    <% created = new Date(post.created) %>
+                    <% modified = new Date(post.modified) %>
+                    <li>Created: <%= created %></li>
+                    <li>Modified: <%= modified %></li>
+                    <li>Title: <%- render(post.title) %></li>
+                    <li>Body: <%- render(post.body) %></li>
+                </ul>
+            </ul>
+            <br>
+        <% } %>
+    </div>
+
+    <div>
+        <a href=<%= nextPath %>>Next</a>
+    </div>
+
+  </body>
+</html>

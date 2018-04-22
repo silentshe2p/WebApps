@@ -1,0 +1,1 @@
+ cp ../angular-blog/dist/* ./public/edit

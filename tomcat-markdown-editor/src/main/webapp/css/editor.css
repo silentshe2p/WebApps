@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav {
+  width: 700px;
+  background: rgb(229, 235, 233);
+  padding: 20px;
+}
+
+.pagename {
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+.list {
+  margin: 20px;
+}
+
+.lact {
+  background: transparent;
+  display: grid;
+  width: 80%;
+}
+
+.act button {
+  color: #fff;
+  font-size: 12px;
+  background: hsl(195, 26%, 82%); 
+  border-radius: 4px;
+  padding: 6px 10px;
+  outline:none;
+  border:none;
+}
+
+.act button:hover {
+  background: hsl(205, 11%, 69%);
+  transition: background .7s;
+}
+
+.act button:active {
+  background: hsl(205, 13%, 64%);
+}
+
+.act .green {
+  border: none;
+  background: hsl(145, 60%, 49%);
+}
+
+.act .green:hover {
+  background: hsl(145, 64%, 42%);
+}
+
+.act .green:active {
+  background: hsl(145, 66%, 29%);
+}
+
+.act .red {
+  border: none;
+  background: hsl(6, 71%, 57%);
+}
+
+.act .red:hover {
+  background: hsl(6, 62%, 45%)
+}
+.act .red:active {
+  background: hsl(6, 62%, 35%)
+}
+
+.act .yellow {
+  border: none;
+  background: hsl(48, 87%, 47%);
+}
+
+.act .yellow:hover {
+  background: hsl(48, 85%, 45%);
+}
+
+.act .yellow:active {
+  background: hsl(48, 86%, 31%);
+}
+
+.title {
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.preview {
+  background: #C6E0CF;
+  color: #6e402d;
+  font-weight: 600;
+  font-size: 16px;
+  border: 8px double rgba(94, 146, 104, 0.6);
+  border-radius: 20px;
+  padding: 20px 0px 20px 40px;
+  margin: 30px;
+}
+
+#title {
+  color: rgb(0, 0, 0);
+  height: 25px;
+  width: 200px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: Console, monospace;
+  font-weight: bold;
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+#body {
+  color: #fff; 
+  background: #5F777E;
+  padding: 0 10px; 
+  height: 20rem;
+  width: 47.6%; 
+  line-height: 25px; 
+  outline: none;
+  border: none; 
+}
+
+table {
+  text-align: center;
+  overflow: hidden;
+  width: 70%;
+}
+
+table th {
+  color: #a86161;
+  background: rgb(36, 41, 59);
+  font-weight: bold;
+  padding: 15px;
+}
+
+table td {
+  color: #e8eef3;
+  background: rgb(100, 112, 151);
+  padding: 2px;
+}

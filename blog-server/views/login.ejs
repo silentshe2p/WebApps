@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/login" method="get">
+      <input type="hidden" name="redirect" value=<%= redirect %>>
+      <div>
+        Username: <input type="text" name="username">
+      </div>
+      <div>
+        Password: <input type="password" name="password">
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

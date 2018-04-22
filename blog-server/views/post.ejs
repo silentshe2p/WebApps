@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <% 
+    render = function(content) {
+      var reader = new commonmark.Parser();
+      var writer = new commonmark.HtmlRenderer();
+      var parsed = reader.parse(content);
+      return writer.render(parsed);
+    } 
+  %>
+  <head>
+    <title>Post</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <h1>Post #<%= post.postid %></h1>
+      <ul>
+        <li>Username: <%= post.username %></li>
+        <% created = new Date(post.created) %>
+        <% modified = new Date(post.modified) %>
+        <li>Created: <%= created %></li>
+        <li>Modified: <%= modified %></li>
+        <li>Title: <%- render(post.title) %></li>
+        <li>Body: <%- render(post.body) %></li>
+      </ul>
+    </div>
+  </body>
+</html>
